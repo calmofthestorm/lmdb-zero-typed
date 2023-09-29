@@ -1,0 +1,12 @@
+[package]
+name = "lmdb-zero-typed"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alex Roper <alex@aroper.net>"]
+
+[dependencies]
+lmdb-zero = "0.4.4"
+supercow = "0.1"
+
+[dev-dependencies]
+tempdir = "0.3"
