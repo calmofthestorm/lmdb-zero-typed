@@ -92,6 +92,7 @@ impl<'txn> WriteAccessor<'txn> {
     pub fn del_key<K, V, L>(&mut self, db: &Database<K, V, L>, key: &K) -> Result<()>
     where
         K: AsLmdbBytes + ?Sized,
+        V: ?Sized,
         L: Layout,
     {
         self.as_lmdb_mut().del_key(&db.0, key)
